@@ -11,10 +11,10 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Auto-dismiss alerts after 5 seconds
+        // Auto-dismiss alerts after 5 seconds, except those with class 'permanent-alert'
         document.addEventListener('DOMContentLoaded', function() {
             setTimeout(function() {
-                var alerts = document.querySelectorAll('.alert');
+                var alerts = document.querySelectorAll('.alert:not(.permanent-alert)');
                 alerts.forEach(function(alert) {
                     var bsAlert = new bootstrap.Alert(alert);
                     bsAlert.close();

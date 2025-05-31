@@ -84,7 +84,7 @@
             </div>
             <div class="card-body">
                 <?php if (empty($lowStockItems)) : ?>
-                    <div class="alert alert-success">
+                    <div class="alert alert-success permanent-alert">
                         No items are low in stock.
                     </div>
                 <?php else : ?>
